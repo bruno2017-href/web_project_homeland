@@ -1,0 +1,29 @@
+.places {
+    display: flex;
+    flex-direction: column;
+    gap: 80px; /* Espacio entre filas de lugares */
+    padding-bottom: 92px;
+}
+
+.place {
+    display: grid;
+    /* Grid de dos columnas: título y link arriba, imagen y texto abajo */
+    grid-template-columns: 460px 1fr;
+    column-gap: 40px;
+    row-gap: 48px;
+}
+
+.place__title {
+    font-size: 72px;
+    line-height: 1.05;
+    margin: 0;
+}
+
+.place__image {
+    width: 100%;
+    grid-column: 1 / 2;
+}
+
+.place__paragraphs {
+    grid-column: 2 / 3;
+}
